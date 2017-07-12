@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+header{
+	width : 1150px;
+	height: 150px;
+	background:#1E90FF;
+	line-height: 150px;
+	margin:0 auto;
+}
+header p{
+	color:white;
+	font-size:25px;
+}
+
+section{
+	width: 960px;
+	margin: 20px auto;
+}
+#linkOne{
+	float: right;
+}
+
+footer{
+	color:white;
+	text-align: center;
+	height: 150px;
+	width : 1150px;
+	margin:0 auto;
+	
+	background: #1E90FF;
+	line-height: 150px;
+	
+}
+footer p {
+	font-size: 25px;
+}

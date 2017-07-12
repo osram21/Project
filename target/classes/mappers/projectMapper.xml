@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dgit.persistence.ProjectDAO">
+	<insert id="insert">
+		INSERT INTO project(project_name, project_content, startdate, enddate, projecting)
+		VALUES(#{project_name}, #{project_content}, #{startDate}, #{endDate}, #{projecting})
+	</insert>
+	
+	<select id="selectList" resultType="Project">
+		select * from project
+	</select>
+	
+	<select id="selectByid" resultType="Project">
+		select * from project where project_no=#{project_no}
+	</select>
+	
+	<update id="update">
+		update project set 
+		project_name=#{project_name}, project_content=#{project_content}, startdate=#{startDate},enddate=#{endDate},projecting=#{projecting} 
+		where project_no=#{project_no}
+	</update>
+	
+	<delete id="delete">
+		delete from project where project_no=#{project_no}
+	</delete>
+</mapper>
